@@ -2770,10 +2770,6 @@ input, select, textarea {
 				z-index: 3;
 			}
 
-			.tiles article h3 {
-				font-size: 1.75em;
-			}
-
 				.tiles article h3 a:hover {
 					color: inherit !important;
 				}
@@ -2960,6 +2956,9 @@ input, select, textarea {
 					border-radius: 0;
 					display: block;
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: top left;
 				}
 
 				.spotlights > section > .image:before {
@@ -3391,19 +3390,19 @@ input, select, textarea {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
-	/* padding: 4em 0 2em 0; */
+	padding: 4em 0 2em 0;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 0 !important;
 	cursor: default;
-	/* height: 300; */
+	height: 300;
 	margin-bottom: -3.25em;
-	/* max-height: 40vh;
-	min-height: 20vh; */
+	max-height: 40vh;
+	min-height: 20vh;
 	position: relative;
-	/* top: -3.25em; */
+	top: -3.25em;
   }
 
 		#banner:after {
@@ -3502,6 +3501,7 @@ input, select, textarea {
 
 		#banner.style2:after {
 			background-color: #8d82c4;
+
 		}
 
 		#banner.style3:after {
