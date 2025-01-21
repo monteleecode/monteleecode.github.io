@@ -3386,9 +3386,11 @@ input, select, textarea {
 	-ms-align-items: center;
 	align-items: center;
 	background-color: #08415C;
-	display: -moz-flex;
+	display: flex;
+	flex-direction: column;
+	/* display: -moz-flex;
 	display: -webkit-flex;
-	display: -ms-flex;
+	display: -ms-flex; */
 	display: flex;
 	padding: 4em 0 2em 0;
 	background-attachment: fixed;
@@ -3397,9 +3399,9 @@ input, select, textarea {
 	background-size: cover;
 	border-bottom: 0 !important;
 	cursor: default;
-	height: 300;
+	height: auto;
 	margin-bottom: -3.25em;
-	max-height: 40vh;
+	/* max-height: 40vh; */
 	min-height: 20vh;
 	position: relative;
 	top: -3.25em;
@@ -3461,7 +3463,7 @@ input, select, textarea {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
-				display: flex;
+				display: block;
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
@@ -3479,10 +3481,10 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
-					font-weight: 600;
+					font-size: 1em;
+					font-weight: 550;
 					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					/* text-transform: uppercase; */
 				}
 
 		/* #banner.major {
@@ -3540,7 +3542,8 @@ input, select, textarea {
 
 			#banner {
 				background-attachment: scroll;
-				height: 40vh; /* Adjust height for medium screens */
+				/* height: 40vh;  */
+				/* Adjust height for medium screens */
 
 			}
 
@@ -3552,7 +3555,7 @@ input, select, textarea {
 				padding: 5em 0 1em 0 ;
 				height: auto;
 				margin-bottom: -2.75em;
-				max-height: none;
+				/* max-height: none; */
 				min-height: 0;
 				top: -2.75em;
 			}
